@@ -5,13 +5,15 @@ export const Hero = () => {
     <section>
       <div>
         <h3 className="mb-4">
-          Aspiring <span className="text-primary">Developer</span> ready to{" "}
-          <span className="text-primary">
-            build impactful digital solutions
+          <span className="text-foreground">
+            Aspiring <span className="text-primary">Developer</span> ready to{" "}
+            <span className="text-primary">
+              build impactful digital solutions
+            </span>
+            .
           </span>
-          .
         </h3>
-        <h6>
+        <h6 className="text-muted">
           I'm a third-year Computer Science student specializing in backend
           development.
         </h6>
@@ -24,7 +26,7 @@ export const Hero = () => {
         />
       </div>
       <div className=" border border-primary rounded-md p-4 font-mono text-sm max-w-md my-6">
-        <p className="text-foreground italic">
+        <p className="text-muted italic">
           "There are 10 types of people in the world: those who understand
           binary, and those who don't."
         </p>

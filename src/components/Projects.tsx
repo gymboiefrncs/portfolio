@@ -6,7 +6,7 @@ export const Projects = () => {
     <section>
       <div className="flex items-center gap-2">
         <Terminal />
-        <h4>projects </h4>
+        <h4 className="text-foreground">projects </h4>
         <hr className="border-primary border-t-2 ml-4 flex-1" />
       </div>
       <div className="grid grid-cols-1 gap-6 mt-6">
