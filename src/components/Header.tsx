@@ -20,7 +20,7 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="flex p-4 md:px-6 justify-between sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-muted/10">
+    <header className="flex p-4 md:px-6 lg:px-12 justify-between sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-muted/10">
       <span className="font-bold font-mono sm:text-lg md:text-xl">
         domxzmir
       </span>
@@ -36,7 +36,7 @@ export const Header = () => {
                     : "text-muted hover:text-primary"
                 }`}
               >
-                <span className="text-xs sm:text-sm">{id}</span>
+                <span className="text-xs sm:text-sm lg:text-md">{id}</span>
               </a>
             </li>
           ))}

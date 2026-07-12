@@ -1,4 +1,4 @@
-import { ArrowRight, Terminal } from "lucide-react";
+import { Terminal } from "lucide-react";
 import { ProjectCard } from "./ProjectCard";
 import {
   ShapeBlob,
@@ -11,27 +11,27 @@ import {
 
 const projectsData = [
   {
-    title: "RESTful API Engine",
+    title: "domxz",
     description:
-      "High-performance backend API service constructed using Go and PostgreSQL featuring strict token validation systems.",
-    tags: ["Go", "PostgreSQL", "JWT", "Docker"],
-    gitHubUrl: "https://github.com",
+      "Code snippet sharing platform with user authentication, real-time updates, and group-based access control for collaborative coding.",
+    tags: [
+      "TypeScript",
+      "React",
+      "Tailwind CSS",
+      "Express",
+      "PostgreSQL",
+      "Render",
+      "Vercel",
+    ],
+    gitHubUrl: "https://github.com/gymboiefrncs/domx.git",
+    liveUrl: "https://www.domxz.me/",
   },
   {
-    title: "Realtime Task Pipeline",
+    title: "Scaffool",
     description:
-      "Event-driven message routing queue management app processing stream tasks asynchronously without system delays.",
-    tags: ["Node.js", "Redis", "TypeScript"],
-    gitHubUrl: "https://github.com",
-    liveUrl: "https://google.com",
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    tags: ["React", "Tailwind CSS", "TypeScript"],
-    gitHubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+      "Scaffoldding tool for me to quickly generate boilerplate for my projects",
+    tags: ["Tyepscript", "Node JS"],
+    gitHubUrl: "https://github.com/gymboiefrncs/scaffool.git",
   },
 ];
 
@@ -58,11 +58,11 @@ export const Projects = () => {
       <div className="flex items-center gap-2 relative z-10">
         <Terminal />
         <h5 className="text-foreground">projects </h5>
-        <hr className="border-primary border-t-2 ml-8 flex-1" />
-        <button className="flex items-center gap-1 shrink-0">
-          <span className="text-sm text-muted">view all</span>
-          <ArrowRight className="h-3 w-3 text-muted" />
-        </button>
+        <div className="flex justify-between w-full">
+          <hr className="border-primary border-t-2 ml-8 w-10" />
+          <hr className="border-primary border-t-2 w-56" />
+          <hr className="border-primary border-t-2 w-60" />
+        </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         {projectsData.map((project, index) => (

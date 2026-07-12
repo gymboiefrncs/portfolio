@@ -38,14 +38,14 @@ export const ProjectCard = ({
           ))}
         </div>
 
-        <div className="flex gap-4 border-t border-primary/20 pt-4">
+        <div className="flex items-center gap-4 border-t border-primary/20 pt-4">
           <a
             href={gitHubUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 font-mono text-xs text-muted transition-colors duration-200 hover:text-primary"
           >
-            code_
+            <ExternalLink className="h-4 w-4" /> source_code
           </a>
 
           {liveUrl && (
