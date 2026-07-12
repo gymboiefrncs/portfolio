@@ -1,30 +1,29 @@
 import { Languages, Server, Terminal, Wrench } from "lucide-react";
 import { SkillCard } from "./SkillCard";
+const skillsData = [
+  {
+    icon: <Terminal className="h-4 w-4" />,
+    title: "frontend",
+    skills: ["React", "Tailwind CSS"],
+  },
+  {
+    icon: <Server className="h-4 w-4" />,
+    title: "backend",
+    skills: ["PostgreSQL", "Node.js"],
+  },
+  {
+    icon: <Wrench className="h-4 w-4" />,
+    title: "tools",
+    skills: ["Git", "VSCode"],
+  },
+  {
+    icon: <Languages className="h-4 w-4" />,
+    title: "languages",
+    skills: ["TypeScript", "Python", "Java"],
+  },
+];
 
 export const Skills = () => {
-  const skillsData = [
-    {
-      icon: <Terminal className="h-4 w-4" />,
-      title: "frontend",
-      skills: ["React", "Tailwind CSS"],
-    },
-    {
-      icon: <Server className="h-4 w-4" />,
-      title: "backend",
-      skills: ["PostgreSQL", "Node.js"],
-    },
-    {
-      icon: <Wrench className="h-4 w-4" />,
-      title: "tools",
-      skills: ["Git", "VSCode"],
-    },
-    {
-      icon: <Languages className="h-4 w-4" />,
-      title: "languages",
-      skills: ["TypeScript", "Python", "Java"],
-    },
-  ];
-
   return (
     <section>
       <div className="flex items-center gap-2">
