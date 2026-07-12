@@ -29,7 +29,7 @@
   }
 
   html::-webkit-scrollbar {
-    display: none;  
+    display: none;
   }
   body {
     background-color: var(--background);
@@ -81,5 +81,10 @@
   .scrollbar {
     scrollbar-width: thin;
     scrollbar-color: var(--primary) var(--background);
+  }
+
+  ::selection {
+    background-color: var(--primary);
+    color: var(--background);
   }
 }
