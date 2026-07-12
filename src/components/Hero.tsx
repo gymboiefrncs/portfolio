@@ -39,7 +39,7 @@ export const Hero = () => {
         />
       </div>
 
-      <div className="border border-primary rounded-md p-4 font-mono text-sm max-w-md my-6 relative z-10">
+      <div className="border border-primary rounded-md p-4 font-mono text-sm max-w-md my-6 mx-auto relative z-10">
         <p className="text-muted italic">
           "There are 10 types of people in the world: those who understand
           binary, and those who don't."
