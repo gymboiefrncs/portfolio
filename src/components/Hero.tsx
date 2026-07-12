@@ -1,4 +1,4 @@
-import heroImage from "../assets/profile.png";
+import heroImage from "../assets/profile.webp";
 import {
   ShapeBracket,
   ShapeSquareFilled,
