@@ -1,5 +1,5 @@
 import { Terminal } from "lucide-react";
-import { ProjectCard } from "./Card";
+import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   return (
