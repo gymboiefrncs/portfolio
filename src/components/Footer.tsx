@@ -1,4 +1,5 @@
 import { ArrowUp, Mail } from "lucide-react";
+import { ReplayButton } from "./ReplayButton";
 
 export const Footer = () => {
   return (
@@ -14,7 +15,8 @@ export const Footer = () => {
             </p>
           </div>
 
-          <div className="flex items-center gap-5">
+          <div className="flex flex-col items-center gap-5">
+            <ReplayButton />
             <a
               href="mailto:yourname@email.com"
               className="text-muted transition-colors hover:text-primary"
