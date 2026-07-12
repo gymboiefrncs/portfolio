@@ -1,4 +1,4 @@
-import { ExternalLink, Mail, Terminal } from "lucide-react";
+import { Terminal } from "lucide-react";
 import { ShapeDotGrid5, ShapeDots, ShapeSquareFilled } from "./Shapes";
 
 const contacts = [
@@ -32,27 +32,22 @@ export const Contacts = () => {
           </span>{" "}
           --contact
         </span>
-        <div className="flex flex-col gap-2 mt-4 font-mono text-xs md:text-sm">
+        <div className="flex flex-col gap-1 mt-4 font-mono text-xs md:text-sm">
           {contacts.map((c, i) => {
-            const isEmail = c.label === "email";
             return (
               <a
                 key={i}
                 href={c.href}
-                target={isEmail ? undefined : "_blank"}
-                rel={isEmail ? undefined : "noopener noreferrer"}
+                target={"_blank"}
+                rel={"noopener noreferrer"}
                 className="flex gap-3 text-foreground hover:text-primary transition-colors duration-200"
               >
                 <span className="text-muted">{c.label}:</span>
                 <span>{c.value}</span>
-                {isEmail ? (
-                  <Mail className="h-3 w-3 md:h-4 md:w-4 text-muted ml-auto" />
-                ) : (
-                  <ExternalLink className="h-3 w-3 md:h-4 md:w-4 text-muted ml-auto" />
-                )}
               </a>
             );
           })}
+          <div className="h-4 w-2 bg-white animate-[blink_1.5s_step-end_infinite] mt-2" />
         </div>
       </div>
     </section>

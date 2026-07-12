@@ -58,4 +58,15 @@
   h6 {
     @apply text-base font-medium text-muted;
   }
+
+  @keyframes blink {
+    0%,
+    50% {
+      background-color: white;
+    }
+    50.01%,
+    100% {
+      background-color: transparent;
+    }
+  }
 }
