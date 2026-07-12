@@ -17,11 +17,9 @@ export const ProjectCard = ({
   liveUrl,
 }: ProjectCardProps) => {
   return (
-    <article className="group relative flex h-full flex-col justify-between border border-primary p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-primary/40 hover:shadow-2xl hover:shadow-black/50">
+    <article className="group relative flex h-full flex-col justify-between border border-primary p-6 transition-[transform, box-shadow] duration-300 ease-out hover:-translate-y-1 hover:translate-x-2 hover:[box-shadow:-6px_6px_0_0_var(--primary)]">
       <div>
-        <h3 className="mb-2 text-lg font-bold text-foreground transition-colors duration-200 group-hover:text-primaryHeading group-hover:text-primary">
-          {title}
-        </h3>
+        <h3 className="mb-2 text-lg font-bold text-foreground">{title}</h3>
         <div className="flex justify-center items-center p-2">
           <img src={projectImage} alt="Project Picture" />
         </div>
