@@ -26,7 +26,7 @@ const skillsData = [
 
 export const Skills = () => {
   return (
-    <section className="relative">
+    <section className="relative scroll-mt-20" id="skills">
       <ShapeDiamondFilled className="h-16 w-16 text-primary absolute top-3 right-78 opacity-70 -z-10" />
       <ShapeSquareOutline className="h-16 w-16 text-primary absolute bottom-10 left-30 opacity-20 -z-10" />
       <div className="flex items-center gap-2 relative z-10">

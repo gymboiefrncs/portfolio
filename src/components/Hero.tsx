@@ -9,7 +9,7 @@ import {
 
 export const Hero = () => {
   return (
-    <section className="relative">
+    <section className="relative scroll-mt-20" id="home">
       <ShapeBracket className="h-5 w-5 text-primary absolute -top-2 left-0 opacity-40  -z-10" />
       <ShapeSquare className="h-16 w-16 text-muted absolute top-16 left-75 opacity-20 -z-10" />
       <ShapeSquareFilled className="h-2.5 w-2.5 text-primary absolute bottom-6 left-4 opacity-40 -z-10" />

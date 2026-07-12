@@ -34,7 +34,10 @@ export const Footer = () => {
             </span>
           </div>
 
-          <button className="flex self-start items-center gap-1.5 font-mono text-xs text-muted transition-colors hover:text-primary sm:self-auto cursor-pointer">
+          <button
+            className="flex self-start items-center gap-1.5 font-mono text-xs text-muted transition-colors hover:text-primary sm:self-auto cursor-pointer"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             <span>sys.return_top</span>
             <ArrowUp className="h-3.5 w-3.5 animate-bounce" />
           </button>

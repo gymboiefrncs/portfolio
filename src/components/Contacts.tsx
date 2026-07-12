@@ -16,7 +16,7 @@ const contacts = [
 
 export const Contacts = () => {
   return (
-    <section className="relative">
+    <section className="relative scroll-mt-20" id="contacts">
       <ShapeDotGrid5 className="h-16 w-16 text-primary absolute top-0 right-78 opacity-40 -z-10" />
       <ShapeDots className="h-5 w-3 text-primary absolute top-20 left-75 opacity-60 -z-10" />
       <ShapeSquareFilled className="h-2.5 w-2.5 text-primary absolute top-40 right-4 opacity-40 -z-10" />

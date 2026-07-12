@@ -37,7 +37,7 @@ const projectsData = [
 
 export const Projects = () => {
   return (
-    <section className="relative">
+    <section className="relative scroll-mt-20" id="projects">
       <ShapeBracket className="h-5 w-5 text-primary absolute -top-2 left-0 opacity-40  -z-10" />
       <ShapeBracket className="h-5 w-5 text-primary absolute bottom-10 left-0 opacity-40  -z-10" />
 
