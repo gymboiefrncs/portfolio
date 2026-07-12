@@ -1,4 +1,5 @@
-import heroImage from "../assets/hero.png";
+import { useState } from "react";
+import heroImage from "../assets/profile.png";
 import {
   ShapeBracket,
   ShapeSquareFilled,
@@ -8,6 +9,8 @@ import {
 } from "./Shapes";
 
 export const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="relative scroll-mt-20" id="home">
       <ShapeBracket className="h-5 w-5 text-primary absolute -top-2 left-0 opacity-40  -z-10" />
@@ -36,7 +39,8 @@ export const Hero = () => {
         <img
           src={heroImage}
           alt="Profile Picture"
-          className="w-60 border object-cover mt-4 rounded-xl relative z-10"
+          onClick={() => setIsModalOpen(true)}
+          className="w-60 md:w-70 lg:w-80 border object-cover mt-4 relative z-10 cursor-pointer transition-[transform, box-shadow] duration-300 ease-out hover:-translate-y-1 hover:translate-x-2 hover:[box-shadow:-6px_6px_0_0_var(--primary)]"
         />
       </div>
 
@@ -49,6 +53,20 @@ export const Hero = () => {
           - Unknown Programmer Folklore
         </span>
       </div>
+
+      {isModalOpen && (
+        <div
+          onClick={() => setIsModalOpen(false)}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+        >
+          <img
+            src={heroImage}
+            alt="Profile Picture"
+            onClick={(e) => e.stopPropagation()}
+            className="max-w-full max-h-full rounded-xl border border-primary"
+          />
+        </div>
+      )}
     </section>
   );
 };
