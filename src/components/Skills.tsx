@@ -1,21 +1,22 @@
 import { Languages, Server, Terminal, Wrench } from "lucide-react";
 import { SkillCard } from "./SkillCard";
 import { ShapeDiamondFilled, ShapeSquareOutline } from "./Shapes";
+
 const skillsData = [
   {
     icon: <Terminal className="h-4 w-4" />,
     title: "frontend",
-    skills: ["React", "Tailwind CSS"],
+    skills: ["React", "TanStack Router", "TanStack Query", "Tailwind CSS"],
   },
   {
     icon: <Server className="h-4 w-4" />,
     title: "backend",
-    skills: ["PostgreSQL", "Node.js"],
+    skills: ["Node.js", "Express", "PostgreSQL"],
   },
   {
     icon: <Wrench className="h-4 w-4" />,
     title: "tools",
-    skills: ["Git", "VSCode"],
+    skills: ["Git", "VS Code"],
   },
   {
     icon: <Languages className="h-4 w-4" />,

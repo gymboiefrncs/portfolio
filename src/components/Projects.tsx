@@ -17,11 +17,12 @@ const projectsData = [
     tags: [
       "TypeScript",
       "React",
+      "Tanstack Router",
+      "Tanstack Query",
       "Tailwind CSS",
       "Express",
       "PostgreSQL",
-      "Render",
-      "Vercel",
+      "Socket.io",
     ],
     gitHubUrl: "https://github.com/gymboiefrncs/domx.git",
     liveUrl: "https://www.domxz.me/",
@@ -30,7 +31,7 @@ const projectsData = [
     title: "Scaffool",
     description:
       "Scaffoldding tool for me to quickly generate boilerplate for my projects",
-    tags: ["Tyepscript", "Node JS"],
+    tags: ["Tyepscript", "Node.js", "Commander.js", "Inquirer.js"],
     gitHubUrl: "https://github.com/gymboiefrncs/scaffool.git",
   },
 ];
