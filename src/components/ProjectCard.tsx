@@ -18,8 +18,12 @@ export const ProjectCard = ({
   return (
     <article className="group relative flex h-full flex-col justify-between border border-primary p-6 transition-[transform, box-shadow] duration-300 ease-out hover:-translate-y-1 hover:translate-x-2 hover:[box-shadow:-6px_6px_0_0_var(--primary)]">
       <div>
-        <h3 className="mb-2 text-sm font-bold text-foreground">{title}</h3>
-        <p className="mb-6 text-xs leading-relaxed text-muted">{description}</p>
+        <h3 className="mb-2 text-sm md:text-base font-bold text-foreground">
+          {title}
+        </h3>
+        <p className="mb-6 text-xs md:text-sm leading-relaxed text-muted">
+          {description}
+        </p>
       </div>
 
       <div>

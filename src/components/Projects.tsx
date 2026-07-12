@@ -48,23 +48,23 @@ export const Projects = () => {
       <ShapeSquareFilled className="h-2.5 w-2.5 text-primary absolute bottom-50 right-4 opacity-40 -z-10" />
       <ShapeSquareFilled className="h-2.5 w-2.5 text-primary absolute bottom-60 left-4 opacity-40 -z-10" />
 
-      <ShapeDotGrid5 className="h-16 w-16 text-primary absolute top-73 left-70 opacity-70 -z-10" />
+      <ShapeDotGrid5 className="h-16 w-16 text-primary absolute top-73 sm:top-83 left-70 sm:left-96 md:left-40 opacity-50 -z-10" />
 
-      <ShapeBlob className="h-20 w-20 text-primary absolute top-30 right-20 opacity-40 -z-10" />
-      <ShapeBlob className="h-20 w-20 text-primary absolute bottom-45 right-75 opacity-40 -z-10" />
+      <ShapeBlob className="h-20 w-20 text-primary absolute top-30 md:top-10 right-20 opacity-40 -z-10" />
+      <ShapeBlob className="h-20 w-20 text-primary absolute bottom-45 md:bottom-20 right-75 md:right-20 opacity-40 -z-10" />
 
-      <ShapeDiamond className="h-16 w-16 text-primary absolute bottom-0 left-75 opacity-30 -z-10" />
+      <ShapeDiamond className="h-16 w-16 text-primary absolute bottom-0 left-75 sm:left-90 md:left-96 opacity-30 -z-10" />
 
       <div className="flex items-center gap-2 relative z-10">
         <Terminal />
         <h5 className="text-foreground">projects </h5>
-        <hr className="border-primary border-t-2 ml-2 flex-1" />
+        <hr className="border-primary border-t-2 ml-8 flex-1" />
         <button className="flex items-center gap-1 shrink-0">
           <span className="text-sm text-muted">view all</span>
           <ArrowRight className="h-3 w-3 text-muted" />
         </button>
       </div>
-      <div className="grid grid-cols-1 gap-6 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         {projectsData.map((project, index) => (
           <ProjectCard
             key={index}

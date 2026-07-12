@@ -15,8 +15,9 @@ export const Hero = () => {
       <ShapeSquareFilled className="h-2.5 w-2.5 text-primary absolute bottom-6 left-4 opacity-40 -z-10" />
       <ShapeDots className="h-5 w-5 text-primary absolute top-58 right-8 opacity-40 -z-10" />
       <ShapeDotGrid3 className="h-16 w-16 text-primary absolute top-58 left-8 opacity-70 -z-10" />
+      <div className="absolute top-0 right-0 border border-primary h-24 w-2" />
       <div className="relative z-10">
-        <h3 className="mb-4">
+        <h3 className="mb-4 md:text-3xl lg:text-4xl">
           <span className="text-foreground">
             Aspiring <span className="text-primary">Developer</span> ready to{" "}
             <span className="text-primary">

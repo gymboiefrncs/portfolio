@@ -23,14 +23,16 @@ export const Contacts = () => {
       <div className="flex items-center gap-2 relative z-10">
         <Terminal />
         <h4 className="text-foreground">contacts</h4>
-        <hr className="border-primary border-t-2 ml-4 flex-1" />
+        <hr className="border-primary border-t-2 ml-64 flex-1" />
       </div>
-      <div className="border border-primary p-6 mt-4">
-        <span className="text-xs text-muted font-mono">
-          <span className="text-foreground font-semibold">$ domxzmir</span>{" "}
+      <div className="border border-primary p-6 mt-4 max-w-lg mx-auto">
+        <span className=" text-muted font-mono">
+          <span className="text-foreground font-semibold md:text-md">
+            $ domxzmir
+          </span>{" "}
           --contact
         </span>
-        <div className="flex flex-col gap-2 mt-4 font-mono text-xs">
+        <div className="flex flex-col gap-2 mt-4 font-mono text-xs md:text-sm">
           {contacts.map((c, i) => {
             const isEmail = c.label === "email";
             return (
@@ -44,9 +46,9 @@ export const Contacts = () => {
                 <span className="text-muted">{c.label}:</span>
                 <span>{c.value}</span>
                 {isEmail ? (
-                  <Mail className="h-3 w-3 text-muted ml-auto" />
+                  <Mail className="h-3 w-3 md:h-4 md:w-4 text-muted ml-auto" />
                 ) : (
-                  <ExternalLink className="h-3 w-3 text-muted ml-auto" />
+                  <ExternalLink className="h-3 w-3 md:h-4 md:w-4 text-muted ml-auto" />
                 )}
               </a>
             );

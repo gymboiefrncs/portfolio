@@ -20,21 +20,23 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="flex p-4 justify-between sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-muted/10">
-      <span className="font-bold font-mono">domxzmir</span>
+    <header className="flex p-4 md:px-6 justify-between sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-muted/10">
+      <span className="font-bold font-mono sm:text-lg md:text-xl">
+        domxzmir
+      </span>
       <nav>
-        <ul className="flex gap-2">
+        <ul className="flex gap-2 sm:gap-4 md:gap-6">
           {sections.map((id) => (
             <li key={id}>
               <a
                 href={`#${id}`}
-                className={`font-mono text-sm transition-colors ${
+                className={`font-mono transition-colors ${
                   activeSection === id
                     ? "text-primary"
                     : "text-muted hover:text-primary"
                 }`}
               >
-                <span className="text-xs">{id}</span>
+                <span className="text-xs sm:text-sm">{id}</span>
               </a>
             </li>
           ))}
