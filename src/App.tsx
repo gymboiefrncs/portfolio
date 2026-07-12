@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="p-4 flex flex-col gap-16 mb-16">
+      <main className="p-4 flex flex-col gap-16 mb-16 overflow-x-clip">
         <Hero />
         <Projects />
         <Skills />
