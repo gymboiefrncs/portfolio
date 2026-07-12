@@ -8,7 +8,7 @@ export const BootStatus = () => {
 
   return (
     <div className="h-4 flex items-center gap-2 font-mono text-xs text-muted">
-      {!introDone && <span className="text-lg">booting...</span>}
+      {!introDone && <span className="text-xs md:text-sm">booting...</span>}
       <span className="h-4 w-2 bg-white animate-[blink_1.5s_step-end_infinite]" />
     </div>
   );

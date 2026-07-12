@@ -1,29 +1,20 @@
-import { ArrowUp, Mail } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import { ReplayButton } from "./ReplayButton";
 
 export const Footer = () => {
   return (
     <footer className="border-t-2 border-muted/10 bg-background/30 px-4 py-8 md:py-12">
       <div className="mx-auto max-w-5xl">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between border-b border-muted/5 pb-8">
-          <div>
+        <div className="flex flex-col border-b border-muted/5 pb-8">
+          <div className="flex justify-between">
             <span className="font-mono text-base font-bold text-foreground">
               domxzmir
             </span>
-            <p className="mt-1 font-mono text-xs text-muted">
-              // BUILD_LOG // STATUS: THIRD_YEAR_STUDENT
-            </p>
-          </div>
-
-          <div className="flex flex-col items-center gap-5">
             <ReplayButton />
-            <a
-              href="mailto:yourname@email.com"
-              className="text-muted transition-colors hover:text-primary"
-            >
-              <Mail className="h-5 w-5" />
-            </a>
           </div>
+          <p className="mt-1 font-mono text-xs text-muted">
+            // BUILD_LOG // STATUS: THIRD_YEAR_STUDENT
+          </p>
         </div>
 
         <div className="mt-8 flex flex-col-reverse gap-4 sm:flex-row sm:items-center sm:justify-between">
