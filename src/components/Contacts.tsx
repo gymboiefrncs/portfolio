@@ -1,4 +1,5 @@
 import { ExternalLink, Mail, Terminal } from "lucide-react";
+import { ShapeDotGrid5, ShapeDots, ShapeSquareFilled } from "./Shapes";
 
 const contacts = [
   {
@@ -15,8 +16,11 @@ const contacts = [
 
 export const Contacts = () => {
   return (
-    <section>
-      <div className="flex items-center gap-2">
+    <section className="relative">
+      <ShapeDotGrid5 className="h-16 w-16 text-primary absolute top-0 right-78 opacity-40 -z-10" />
+      <ShapeDots className="h-5 w-3 text-primary absolute top-20 left-75 opacity-60 -z-10" />
+      <ShapeSquareFilled className="h-2.5 w-2.5 text-primary absolute top-40 right-4 opacity-40 -z-10" />
+      <div className="flex items-center gap-2 relative z-10">
         <Terminal />
         <h4 className="text-foreground">contacts</h4>
         <hr className="border-primary border-t-2 ml-4 flex-1" />

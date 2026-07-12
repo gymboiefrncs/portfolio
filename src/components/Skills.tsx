@@ -1,5 +1,6 @@
 import { Languages, Server, Terminal, Wrench } from "lucide-react";
 import { SkillCard } from "./SkillCard";
+import { ShapeDiamondFilled, ShapeSquareOutline } from "./Shapes";
 const skillsData = [
   {
     icon: <Terminal className="h-4 w-4" />,
@@ -25,8 +26,10 @@ const skillsData = [
 
 export const Skills = () => {
   return (
-    <section>
-      <div className="flex items-center gap-2">
+    <section className="relative">
+      <ShapeDiamondFilled className="h-16 w-16 text-primary absolute top-3 right-78 opacity-70 -z-10" />
+      <ShapeSquareOutline className="h-16 w-16 text-primary absolute bottom-10 left-30 opacity-20 -z-10" />
+      <div className="flex items-center gap-2 relative z-10">
         <Terminal />
         <h4 className="text-foreground">skills </h4>
         <hr className="border-primary border-t-2 ml-4 flex-1" />

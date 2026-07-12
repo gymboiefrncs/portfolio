@@ -1,5 +1,13 @@
 import { ArrowRight, Terminal } from "lucide-react";
 import { ProjectCard } from "./ProjectCard";
+import {
+  ShapeBlob,
+  ShapeBracket,
+  ShapeDiamond,
+  ShapeDotGrid5,
+  ShapeSquare,
+  ShapeSquareFilled,
+} from "./Shapes";
 
 const projectsData = [
   {
@@ -29,8 +37,25 @@ const projectsData = [
 
 export const Projects = () => {
   return (
-    <section>
-      <div className="flex items-center gap-2">
+    <section className="relative">
+      <ShapeBracket className="h-5 w-5 text-primary absolute -top-2 left-0 opacity-40  -z-10" />
+      <ShapeBracket className="h-5 w-5 text-primary absolute bottom-10 left-0 opacity-40  -z-10" />
+
+      <ShapeSquare className="h-16 w-16 text-muted absolute top-16 right-75 opacity-20 -z-10" />
+
+      <ShapeSquareFilled className="h-2.5 w-2.5 text-primary absolute top-20 left-4 opacity-40 -z-10" />
+      <ShapeSquareFilled className="h-2.5 w-2.5 text-primary absolute top-30 right-4 opacity-40 -z-10" />
+      <ShapeSquareFilled className="h-2.5 w-2.5 text-primary absolute bottom-50 right-4 opacity-40 -z-10" />
+      <ShapeSquareFilled className="h-2.5 w-2.5 text-primary absolute bottom-60 left-4 opacity-40 -z-10" />
+
+      <ShapeDotGrid5 className="h-16 w-16 text-primary absolute top-73 left-70 opacity-70 -z-10" />
+
+      <ShapeBlob className="h-20 w-20 text-primary absolute top-30 right-20 opacity-40 -z-10" />
+      <ShapeBlob className="h-20 w-20 text-primary absolute bottom-45 right-75 opacity-40 -z-10" />
+
+      <ShapeDiamond className="h-16 w-16 text-primary absolute bottom-0 left-75 opacity-30 -z-10" />
+
+      <div className="flex items-center gap-2 relative z-10">
         <Terminal />
         <h5 className="text-foreground">projects </h5>
         <hr className="border-primary border-t-2 ml-2 flex-1" />
