@@ -1,5 +1,4 @@
 import { ExternalLink } from "lucide-react";
-import projectImage from "../assets/hero.png";
 
 interface ProjectCardProps {
   title: string;
@@ -19,11 +18,8 @@ export const ProjectCard = ({
   return (
     <article className="group relative flex h-full flex-col justify-between border border-primary p-6 transition-[transform, box-shadow] duration-300 ease-out hover:-translate-y-1 hover:translate-x-2 hover:[box-shadow:-6px_6px_0_0_var(--primary)]">
       <div>
-        <h3 className="mb-2 text-lg font-bold text-foreground">{title}</h3>
-        <div className="flex justify-center items-center p-2">
-          <img src={projectImage} alt="Project Picture" />
-        </div>
-        <p className="mb-6 text-sm leading-relaxed text-muted">{description}</p>
+        <h3 className="mb-2 text-sm font-bold text-foreground">{title}</h3>
+        <p className="mb-6 text-xs leading-relaxed text-muted">{description}</p>
       </div>
 
       <div>
