@@ -40,10 +40,18 @@ export const Contacts = () => {
                 href={c.href}
                 target={"_blank"}
                 rel={"noopener noreferrer"}
-                className="flex gap-3 text-foreground hover:text-primary transition-colors duration-200"
+                className="group flex gap-3 text-foreground"
               >
                 <span className="text-muted">{c.label}:</span>
-                <span>{c.value}</span>
+                <span>
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                    [
+                  </span>
+                  {c.value}
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-150">
+                    ]
+                  </span>
+                </span>
               </a>
             );
           })}
