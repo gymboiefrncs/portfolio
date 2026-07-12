@@ -1,3 +1,4 @@
+import { Contacts } from "./components/Contacts";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
@@ -12,6 +13,7 @@ function App() {
         <Hero />
         <Projects />
         <Skills />
+        <Contacts />
       </main>
       <Footer />
     </div>
