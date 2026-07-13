@@ -24,8 +24,9 @@ export const Hero = () => {
             </span>
           </span>
         </h3>
-        <p className="text-muted font-mono text-sm mb-4">
-          - works on my machine. don't ask why.
+        <p className="text-muted text-sm mb-4">
+          - Explaining my code to a rubber duck makes me realize my own
+          stupidity
         </p>
       </div>
 
