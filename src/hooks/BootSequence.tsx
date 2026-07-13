@@ -18,7 +18,7 @@ type BootContextType = {
 const BootContext = createContext<BootContextType | null>(null);
 
 const INTRO_DELAY = 1500;
-const SECTION_DELAY = 500;
+const SECTION_DELAY = 700;
 const SCROLL_TOP_DELAY = 600;
 const STORAGE_KEY = "boot-sequence-played";
 
@@ -29,9 +29,7 @@ export const BootProvider = ({
   children: ReactNode;
   totalSections: number;
 }) => {
-  const alreadyPlayed =
-    typeof window !== "undefined" &&
-    sessionStorage.getItem(STORAGE_KEY) === "true";
+  const alreadyPlayed = sessionStorage.getItem(STORAGE_KEY) === "true";
 
   const [introDone, setIntroDone] = useState(alreadyPlayed);
   const [bootedCount, setBootedCount] = useState(
@@ -39,15 +37,6 @@ export const BootProvider = ({
   );
 
   const wasActivelyBooting = useRef(!alreadyPlayed);
-
-  useEffect(() => {
-    if (alreadyPlayed && typeof window !== "undefined") {
-      if ("scrollRestoration" in window.history) {
-        window.history.scrollRestoration = "manual";
-      }
-      window.scrollTo({ top: 0, behavior: "auto" });
-    }
-  }, [alreadyPlayed]);
 
   useEffect(() => {
     if (introDone) return;

@@ -17,19 +17,16 @@ export const Hero = () => {
       <ShapeDotGrid3 className="h-16 w-16 text-primary absolute top-58 left-8 opacity-70 -z-10" />
       <div className="absolute top-0 right-0 border border-primary h-24 w-2" />
       <div className="relative z-10">
-        <h3 className="mb-4 md:text-3xl lg:text-4xl">
+        <h3 className="mb-2 md:text-3xl lg:text-4xl">
           <span className="text-foreground">
-            Aspiring <span className="text-primary">Developer</span> ready to{" "}
             <span className="text-primary">
-              build impactful digital solutions
+              Backend Developer, Currently Specializing in Asking AI Nicely
             </span>
-            .
           </span>
         </h3>
-        <h6 className="text-muted">
-          I'm a third-year Computer Science student specializing in backend
-          development.
-        </h6>
+        <p className="text-muted font-mono text-sm mb-4">
+          - works on my machine. don't ask why.
+        </p>
       </div>
 
       <div className="flex justify-center items-center">
